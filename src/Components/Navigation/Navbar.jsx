@@ -6,6 +6,9 @@ export const Navbar = () => {
 
   const links = [
     { to: "/", label: "Home" },
+    { to: "/app", label: "App" },
+    { to: "/methodology", label: "Methodology" },
+    { to: "/pricing", label: "Pricing" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ];
@@ -22,12 +25,12 @@ export const Navbar = () => {
             </span>
           </Link>
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 text-sm font-medium items-center">
+          <div className="hidden md:flex space-x-8 font-medium items-center">
             {links.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className="mx-2 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                className="mx-2 font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
               >
                 {link.label}
               </Link>
@@ -44,7 +47,7 @@ export const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="w-full bg-gray-50/80 backdrop-blur-[14px] dark:bg-zinc-800/70 border-b border-gray-200 dark:border-zinc-800 flex flex-col p-4 space-y-4 shadow-sm">
+        <div className="md:hidden w-full bg-gray-50/80 backdrop-blur-[14px] dark:bg-zinc-800/70 border-b border-gray-200 dark:border-zinc-800 flex flex-col p-4 space-y-4 shadow-sm">
           {links.map((link) => (
             <Link
               key={link.to}
