@@ -10,7 +10,6 @@ export const Navbar = () => {
     { to: "/methodology", label: "Methodology" },
     { to: "/pricing", label: "Pricing" },
     { to: "/about", label: "About" },
-    { to: "/contact", label: "Contact" },
   ];
 
   return (
@@ -24,8 +23,9 @@ export const Navbar = () => {
               <span className="text-blue-500 font-black">AI</span>
             </span>
           </Link>
+
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 font-medium items-center">
+          <div className="hidden md:flex space-x-8 gap-4 font-medium items-center">
             {links.map((link) => (
               <Link
                 key={link.to}
@@ -35,6 +35,12 @@ export const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            <Link
+              to="/app"
+              className="bg-blue-600 text-white px-5 py-1.5 text-sm rounded-full hover:bg-blue-700 transition font-semibold"
+            >
+              Coba Demo Gratis
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -58,6 +64,13 @@ export const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          <Link
+            to="/app"
+            onClick={() => setIsOpen(false)}
+            className="block w-full text-center font-bold text-blue-600 dark:text-white py-2"
+          >
+            Coba Demo
+          </Link>
         </div>
       )}
     </nav>
