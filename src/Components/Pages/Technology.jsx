@@ -21,7 +21,7 @@ export const Technology = () => {
             Google Gemini LLM
           </h3>
           <p className="text-[17px] leading-relaxed text-[#86868b]">
-            Kami menggunakan Large Language Model (LLM) Gemini 1.5 Flash untuk
+            Kami menggunakan Large Language Model (LLM) Gemini 2.5 Flash untuk
             memahami semantik teks. Tidak seperti metode tradisional yang hanya
             mencocokkan kata kunci, Gemini memahami nuansa, sarkasme, dan
             inkonsistensi logika dalam berita.
