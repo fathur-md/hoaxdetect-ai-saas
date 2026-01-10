@@ -2,7 +2,7 @@ import { HeroSection } from "../UI/HeroSection";
 
 export const LandingPage = () => {
   return (
-    <div className="min-h-[200dvh]">
+    <div className="w-full">
       <HeroSection />
     </div>
   );

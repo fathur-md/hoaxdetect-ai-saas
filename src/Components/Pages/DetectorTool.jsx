@@ -50,7 +50,7 @@ export const DetectorTool = () => {
     }
   };
   return (
-    <section className="mx-auto min-h-[85vh] max-w-4xl px-6 py-12">
+    <section className="mx-auto min-h-[85vh] w-full max-w-4xl px-6 py-12">
       <div className="mb-10 text-center">
         <h2 className="mb-3 text-3xl font-semibold text-[#1d1d1f]">
           Analisis Berita
@@ -60,7 +60,7 @@ export const DetectorTool = () => {
         </p>
       </div>
 
-      <div className="relative overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all">
+      <div className="relative w-full overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all">
         <div className="p-8">
           <textarea
             value={input}
