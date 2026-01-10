@@ -1,8 +1,8 @@
-import { HeroSection } from "../LandingPage/HeroSection";
+import { HeroSection } from "../UI/HeroSection";
 
 export const LandingPage = () => {
   return (
-    <div className="relative flex flex-col items-center justify-start overflow-hidden min-h-[200dvh]">
+    <div className="min-h-[200dvh]">
       <HeroSection />
     </div>
   );

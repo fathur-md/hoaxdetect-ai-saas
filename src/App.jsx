@@ -1,10 +1,10 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { MainLayout } from "./Components/Layouts/MainLayout";
 import { LandingPage } from "./Components/Pages/LandingPage";
-import { About } from "./Components/Pages/About";
-import { AppPage } from "./Components/Pages/AppPage";
-import { MethodPage } from "./Components/Pages/MethodPage";
-import { Pricing } from "./Components/Pages/Pricing";
+import { DetectorTool } from "./Components/Pages/DetectorTool";
+import { Technology } from "./Components/Pages/Technology";
+import { PricingPage } from "./Components/Pages/PricingPage";
+import { AboutPage } from "./Components/Pages/AboutPage";
 
 function App() {
   return (
@@ -12,10 +12,10 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/app" element={<AppPage />} />
-          <Route path="/methodology" element={<MethodPage />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/app" element={<DetectorTool />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Route>
       </Routes>
     </HashRouter>
