@@ -1,6 +1,6 @@
-import Fathur from "../../Assets/fathur.png";
-import Hendri from "../../Assets/hendri.png";
-import Alba from "../../Assets/alba.png";
+import Fathur from "../../assets/fathur.png";
+import Hendri from "../../assets/hendri.png";
+import Alba from "../../assets/alba.png";
 
 export const AboutPage = () => {
   const teamMembers = [
