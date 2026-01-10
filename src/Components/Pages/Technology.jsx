@@ -1,3 +1,55 @@
+import { BrainCircuit, Cpu, Database } from "lucide-react";
 export const Technology = () => {
-  return <div>Technology Page</div>;
+  return (
+    <section className="mx-auto max-w-5xl px-6 py-20">
+      <div className="mb-16 max-w-2xl">
+        <h2 className="mb-4 text-4xl font-semibold text-[#1d1d1f]">
+          Under the Hood.
+        </h2>
+        <p className="text-xl text-[#86868b]">
+          Bagaimana HoaxDetect menggabungkan pemrosesan bahasa alami dengan
+          kecerdasan generatif.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="col-span-1 rounded-[30px] border border-gray-100 bg-white p-10 shadow-sm transition-shadow hover:shadow-md md:col-span-2">
+          <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-[#0071e3]">
+            <BrainCircuit size={32} />
+          </div>
+          <h3 className="mb-3 text-2xl font-semibold tracking-tight">
+            Google Gemini LLM
+          </h3>
+          <p className="text-[17px] leading-relaxed text-[#86868b]">
+            Kami menggunakan Large Language Model (LLM) Gemini 1.5 Flash untuk
+            memahami semantik teks. Tidak seperti metode tradisional yang hanya
+            mencocokkan kata kunci, Gemini memahami nuansa, sarkasme, dan
+            inkonsistensi logika dalam berita.
+          </p>
+        </div>
+
+        <div className="rounded-[30px] border border-gray-100 bg-white p-10 shadow-sm transition-shadow hover:shadow-md">
+          <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-purple-50 text-purple-600">
+            <Cpu size={24} />
+          </div>
+          <h3 className="mb-2 text-xl font-semibold">Cloud Inference</h3>
+          <p className="text-[#86868b]">
+            Proses analisis terjadi dalam milidetik di server Google Cloud yang
+            aman dan skalabel.
+          </p>
+        </div>
+
+        <div className="rounded-[30px] border border-gray-100 bg-white p-10 shadow-sm transition-shadow hover:shadow-md">
+          <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600">
+            <Database size={24} />
+          </div>
+          <h3 className="mb-2 text-xl font-semibold">Fact Checking</h3>
+          <p className="text-[#86868b]">
+            Model dilatih dengan jutaan parameter data untuk membedakan fakta
+            dan fiksi.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
