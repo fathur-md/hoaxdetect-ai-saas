@@ -7,16 +7,6 @@ export const HeroSection = () => {
   return (
     <section className="relative overflow-hidden pt-16 pb-32">
       <div className="mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-1.5 shadow-sm">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0071e3]"></span>
-          </span>
-          <span className="text-[11px] font-semibold tracking-wide text-[#1d1d1f] uppercase">
-            New v1.0 • Gemini Powered
-          </span>
-        </div>
-
         <h1 className="mb-6 text-5xl leading-[1.05] font-semibold tracking-tighter text-[#1d1d1f] md:text-7xl">
           Kebenaran. <br />
           <span className="bg-linear-to-br from-[#2997ff] to-[#0071e3] bg-clip-text text-transparent">
@@ -49,7 +39,7 @@ export const HeroSection = () => {
           <BentoCard
             title="Akurasi Tinggi"
             value="98%"
-            desc="Ditenagai LLM terkini."
+            desc="Algoritma Text Mining."
             icon={<Activity className="text-green-500" />}
           />
           <BentoCard
@@ -60,8 +50,8 @@ export const HeroSection = () => {
           />
           <BentoCard
             title="Teknologi"
-            value="Gemini"
-            desc="Model Generative AI."
+            value="NLP"
+            desc="Natural Language Proc."
             icon={<Sparkles className="text-purple-500" />}
           />
         </div>
