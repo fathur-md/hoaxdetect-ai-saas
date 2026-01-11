@@ -26,7 +26,7 @@ HoaxDetect AI adalah platform Software as a Service (SaaS) berbasis web yang dir
 
    ```bash
    git clone https://github.com/fathur-md/hoaxdetect-ai-saas.git
-   cd hoax-detect-saas
+   cd hoaxdetect-ai-saas
    ```
 
 2. **Install dependencies**
